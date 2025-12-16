@@ -31,6 +31,10 @@ header {
     background-color: lightcoral;
 }
 
+h1 {
+    font-family: "Niconne", cursive
+}
+
 /* main content*/
 main {
     background-color: lightblue;
