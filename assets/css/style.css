@@ -26,6 +26,13 @@ body {
     font-family: "Niconne", cursive;
 }
 
+h1, h2, h3 {
+    font-family: "Niconne", cursive;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
 /* header*/
 header {
     background-color: #ffffff;
@@ -44,26 +51,20 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: "Niconne", cursive;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
-}
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* nav bar styles with dropdown toggle*/
 nav {
     position: absolute;
@@ -102,6 +103,24 @@ main {
     height: 800px;
     width: 100%;
     background: url(../images/hero-image.webp) no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* last rgb value (.7) sets the opacity so it is semi-transparent*/
+    background-color: rgb(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30%;
+    width: 80%;
+    height: 200px;
+    min-height: 200px;
+    padding: 400px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 /* footer*/
@@ -121,6 +140,7 @@ main {
 
 /*media query: tablets and larger screens (768px and up)*/
 @media screen and (min-width: 768px) {
+
     /*header*/
     nav {
         display: block;
@@ -131,10 +151,10 @@ main {
     }
 
     #menu {
-        display:flex;
+        display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -151,13 +171,13 @@ main {
     /* main content*/
     main {
         /*push main content down to accomodate larger header*/
-        margin-top: 79px; 
+        margin-top: 79px;
     }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
