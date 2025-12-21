@@ -23,13 +23,13 @@ body {
     flex-direction: column;
     /*Generic project styles*/
     color: #3a3a3a;
-    font-family: "Niconne", cursive;
+    font-family: "lato", cursive;
 }
 
 h1, h2, h3 {
-    font-family: "Niconne", cursive;
+    font-family: "lato", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: #252525;
 }
 
@@ -115,7 +115,7 @@ main {
     width: 80%;
     height: 200px;
     min-height: 200px;
-    padding: 400px;
+    padding-top: 40px;
     padding-left: 10px;
 }
 
@@ -172,6 +172,12 @@ main {
     main {
         /*push main content down to accomodate larger header*/
         margin-top: 79px;
+    }
+
+    /* hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
