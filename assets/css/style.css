@@ -122,7 +122,7 @@ main {
     background-color: rgb(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
-    bottom: 30%;
+    bottom: 30px;
     width: 80%;
     height: 200px;
     min-height: 200px;
@@ -165,8 +165,8 @@ main {
 /* Benefits image*/
 #circle-cover-bg {
     background: url("../images/reasons-image.webp") no-repeat top center/cover;
-    height: 90vh;
-    width: 90vh;
+    height: 90vw;
+    width: 90vw;
     margin-bottom: 20px;
     /* to make square image to circle */
     border-radius: 50%;
@@ -238,7 +238,6 @@ main {
     color: #fafafa;
     margin-bottom: 20px;
 }
-
 
 .text-input {
     background: transparent;
@@ -343,7 +342,7 @@ main {
     }
 
     #benefits-physical>div,
-    #bennefits-mental>div {
+    #benefits-mental>div {
         width: 75%;
     }
 
@@ -356,6 +355,29 @@ main {
     #photos {
         column-count: 3;
     }
+
+    /* Form */
+
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -364,7 +386,7 @@ main {
         border-bottom: 1px solid #3a3a3a;
     }
 
-    /* galley */
+    /* gallery */
     #photos {
         column-count: 4;
     }
